@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, StyleSheet, TouchableHighlight} from 'react-native';
-
+import {COLORS} from '../assets/colors';
 const MeuButtom = ({texto, aoClicar}) => {
   return (
     <TouchableHighlight style={styles.buttom} onPress={() => aoClicar()}>
@@ -12,7 +12,7 @@ export default MeuButtom;
 
 const styles = StyleSheet.create({
   text: {
-    color: 'blue',
+    color: COLORS.white,
     fontSize: 20,
   },
   buttom: {
@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#0f0',
-    borderWidth: 1,
+    backgroundColor: COLORS.accent,
+    borderRadius: 5,
     fontSize: 16,
     marginTop: 10,
   },

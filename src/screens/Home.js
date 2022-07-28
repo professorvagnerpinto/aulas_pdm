@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import MeuButtom from '../componentes/MeuButtom';
-import auth from '@react-native-firebase/auth';
+
 
 const Home = ({navigation}) => {
   const [cont, setCont] = useState(0);
-
-  console.log(auth);
 
   useEffect(() => {
     //console.log('Atualizou o componente.');
